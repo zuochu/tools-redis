@@ -10,6 +10,7 @@ public class Test {
 
 
     public static void main(String[] args) {
-        System.out.println(RedisSentinelUtils.get(2, "1"));
+        RedisSentinelUtils.set(2, "myKey", "123");
+        System.out.println(RedisSentinelUtils.get(2, "myKey"));
     }
 }

@@ -31,4 +31,8 @@ public class RedisSentinelUtils {
     public static String get(int dbNum, String key) {
         return RedisUtils.get(dbNum, key);
     }
+
+    public static boolean set(int dbNum, String key, String value) {
+        return RedisUtils.set(dbNum, key, value);
+    }
 }
